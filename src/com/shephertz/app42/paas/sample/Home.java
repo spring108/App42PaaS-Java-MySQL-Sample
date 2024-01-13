@@ -65,10 +65,18 @@ public class Home extends HttpServlet {
 		} catch (SQLException e) {
 			e.printStackTrace();
 			out.print("<h2 align='center'>Error occured. See Logs.</h2><br/><br/>");
+			out.print("getMessage:<br>");
+			out.print(ex.getMessage());
+			out.print("toString:<br>");
+			out.print(ex.toString());
 			out.print("<br/><a href='/' style='font-size: 18px;'>Back</a>");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 			out.print("<h2 align='center'>Error occured. See Logs.</h2><br/><br/>");
+			out.print("getMessage:<br>");
+			out.print(ex.getMessage());
+			out.print("toString:<br>");
+			out.print(ex.toString());
 			out.print("<br/><a href='/' style='font-size: 18px;'>Back</a>");
 		}
 		out.print("</div></div></div></div></body></html>");
