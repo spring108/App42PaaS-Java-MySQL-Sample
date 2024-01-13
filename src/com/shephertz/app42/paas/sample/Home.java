@@ -64,7 +64,7 @@ public class Home extends HttpServlet {
 		out.print("<br/><a href='/' style='font-size: 18px;'>Create Post</a>");
 		} catch (SQLException e) {
 			e.printStackTrace();
-			out.print("<h2 align='center'>Error occured. See Logs.</h2><br/><br/>");
+			out.print("<h2 align='left'>Error occured. See Logs.</h2><br/><br/>");
 			out.print("getMessage:<br>");
 			out.print(e.getMessage());
 			out.print("toString:<br>");
@@ -72,7 +72,7 @@ public class Home extends HttpServlet {
 			out.print("<br/><a href='/' style='font-size: 18px;'>Back</a>");
 		} catch (Exception ex) {
 			ex.printStackTrace();
-			out.print("<h2 align='center'>Error occured. See Logs.</h2><br/><br/>");
+			out.print("<h2 align='left'>Error occured. See Logs.</h2><br/><br/>");
 			out.print("getMessage:<br>");
 			out.print(ex.getMessage());
 			out.print("toString:<br>");
