@@ -66,9 +66,9 @@ public class Home extends HttpServlet {
 			e.printStackTrace();
 			out.print("<h2 align='center'>Error occured. See Logs.</h2><br/><br/>");
 			out.print("getMessage:<br>");
-			out.print(ex.getMessage());
+			out.print(e.getMessage());
 			out.print("toString:<br>");
-			out.print(ex.toString());
+			out.print(e.toString());
 			out.print("<br/><a href='/' style='font-size: 18px;'>Back</a>");
 		} catch (Exception ex) {
 			ex.printStackTrace();
