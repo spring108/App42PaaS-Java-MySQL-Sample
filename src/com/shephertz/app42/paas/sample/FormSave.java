@@ -49,7 +49,7 @@ public class FormSave extends HttpServlet {
 		try {
 			// insert query
 			String query = "INSERT INTO user(name,description,email) VALUES('"
-					+ name + "', '" + description + "', '" + email + "')";
+					+ name + "', '" + description + "', '" + email + "');";
 			System.out.println("Query: " + query);
 			// Database Manager called
 			DBManager db = new DBManager();
