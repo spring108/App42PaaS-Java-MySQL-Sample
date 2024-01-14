@@ -43,7 +43,7 @@ public class Home extends HttpServlet {
 		out.print("<!doctype html><html><head><meta charset='utf-8'><title>App42 Sample Java-MySql Application</title><link href='css/style-User-Input-Form.css' rel='stylesheet' type='text/css'></head><body><div class='App42PaaS_header_wrapper'><div class='App42PaaS_header_inner'><div class='App42PaaS_header'><div class='logo'><a href='http://app42paas.shephertz.com'><img border='0' alt='App42PaaS' src='images/logo.png'></img></a></div></div></div></div><div class='App42PaaS_body_wrapper'><div class='App42PaaS_body'><div class='App42PaaS_body_inner'><div class='contactPage_title'>");
 		try {
 			// select query
-			String query = "select * from user";
+			String query = "select * from user;";
 			System.out.println("Query: " + query);
 			// Database Manager Called
 			DBManager db = new DBManager();
